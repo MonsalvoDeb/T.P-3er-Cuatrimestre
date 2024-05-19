@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Debora Monsalvo">
+
+	<!--Importación de fuentes de GoogleFonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+	<title>Contacto</title>
+
+	<!--Cambio el icono predeterminado del navegador por una tortuga-->
+	<link rel="icon" href="icono.png">
+
+	<!-- Incorporo css para darles estilos al formulario-->
+	<style>
+		body{
+			background-image: url(img4.jpg);
+			background-size:cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			justify-content: center;
+			align-items: center;
+		}
+		.caja1{
+			width: 80%;
+            margin: 0 auto;/* Centra el div horizontalmente */
+            padding: 8px;
+			border-radius: 2rem; 
+			background-color: rgba(212, 255, 247, 0.7); 
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.cajas{
+			margin: 8px;
+		}
+		h1{
+			font-family: "Poetsen One", sans-serif;
+		}
+		form, select, option{
+			font-family: "Teachers", sans-serif;
+			font-size: 20px;
+			border-radius: 5rem;
+		}
+		textarea{
+			font-family: "Teachers", sans-serif;
+			font-size: 20px;
+			border-radius: 0.8rem;
+			width: 300px;
+			height: 100px;
+		}
+
+		input{
+			font-family: "Teachers", sans-serif;
+			font-size: 20px;
+    		border-radius: 5rem;
+   			border: none;
+    		margin: 0.5rem;
+    		padding: 0.5rem;
+    		width: 15rem;
+		}
+		.boton{
+			width: 6rem;
+			font-family: "Teachers", sans-serif;
+			font-size: 20px;
+    		border-radius: 5rem;
+   			border: none;
+    		margin: 0.5rem;
+    		padding: 0.5rem;
+			cursor: pointer;
+			transition: background-color 0.4s ease;
+		}
+		.boton:hover{
+            background-color: #57A6A1; 
+        }
+        a{
+        	text-decoration: none;
+        	color: black;
+        }
+		.botones{
+			cursor: pointer;
+			transition: background-color 0.4s ease;
+		}
+		.botones:hover{
+            background-color: #57A6A1; 
+        }
+	</style>
+</head>
+<body>
+	<!-- Boton para volver a la pagina principal y salir del formulario-->
+	<button class="boton" onclick=""><a href="index.html">Inicio</a></button>
+
+	<!-- contendor general del formulario-->
+	<div class="caja1" >
+		<!--Armado del formulario-->
+		 <form action="#" method="post">
+		 	<h1 align="center">Formulario de contacto</h1>
+
+		 	<div style="display: flex; justify-content: center; align-items: center;">
+		 		<div class="cajas">
+    				<label for="nombre">Nombre:</label>
+    				<input type="text" id="nombre" name="nombre" maxlength="15" placeholder="Ingrese su nombre." required>
+    			</div>
+    			<div class="cajas">
+    				<label for="apellido">Apellido:</label>
+    				<input type="text" id="apellido" name="apellido" maxlength="15" placeholder="Ingrese su apellido." required>
+    			</div>
+    		</div>
+
+    		<div style="display: flex; justify-content: center; align-items: center;">
+    			<div class="cajas">
+    				<label for="nacimiento">Fecha de Nacimiento:</label>
+    				<input type="date" id="nacimiento" name="nacimiento" required>
+    			</div>
+    			<div class="cajas">
+    				<label for="email">Correo electrónico:</label>
+    				<input type="email" id="email" name="email" maxlength="30"   placeholder="Ingrese su e-mail."required>
+    			</div>
+			</div>
+
+			<div style="display: flex; justify-content: center; ">
+				<div class="cajas">
+    				<label for="asunto">Asunto:</label>
+    				<select id="asunto" name="asunto" required>
+      					<option value="">Seleccione un asunto</option>
+      					<option value="Consulta">Consulta</option>
+      					<option value="Sugerencia">Sugerencia</option>
+      					<option value="Informe de error">Informe de error</option>
+      					<option value="Otro">Otro</option>
+    				</select>
+    			</div>
+    			<div class="cajas">
+    				<label for="mensaje">Mensaje:</label> <br>
+    				<textarea id="mensaje" name="mensaje" maxlength="350"  placeholder="Escriba su mensaje."required></textarea>
+    			</div>
+			</div>
+
+			<div style="display: flex; justify-content: center; ">
+				<input type="checkbox" id="suscribirse" name="suscribirse" value="si">
+    			<label for="suscribirse">¿Te gustaría suscribirte al boletín informativo?</label>
+			</div>
+
+			<!-- Botones para enviar o cancelar la entrega de formulario-->
+			<div style="display: flex; justify-content: center;  ">
+    			<input class="botones" type="submit" value="Enviar">
+    			<input class="botones" type="reset" value="Cancelar">
+    		</div>
+  		</form>
+	</div>
+	
+</body>
+</html>

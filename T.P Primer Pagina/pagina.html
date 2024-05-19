@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Debora Monsalvo">
+	<title>pagprincipal</title>
+    <!--Cambio el icono predeterminado del navegador por una tortuga-->
+    <link rel="icon" href="icono.png">
+
+    <!--Importación de fuentes de GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap" rel="stylesheet">
+
+    <!-- Incorporo css a la página para darle estilos-->
+    <style>
+         body {
+            background-color: #D4FFF7; /* Color de fondo */
+            margin:  0 20px;
+            padding: 0;
+            width: auto;
+            height: auto;
+        }
+        a:visited {
+            color: grey; /* Color de los enlaces visitados */
+        }
+        a:hover {
+            color: #57A6A1; /* Color de los enlaces al pasar el cursor */
+        }
+        a:active {
+            color: #57A6A1;  /* Color de los enlaces activos */
+        }
+        h1, h2, h3, h4 {
+            font-family: "Poetsen One", sans-serif;
+        }
+        p, ul, li, ol, dl, dt, tr, td, th {
+            font-family: "Teachers", sans-serif; 
+        }
+        h5 {
+            font-family: "Rubik Microbe", system-ui;
+        }
+        .foto {
+            width: 33%; /* Ancho del 33% del contenedor padre */
+            height: auto; /* Altura automática para mantener la proporción */
+            padding: 1px; /* Espacio interno de 1px alrededor del elemento */
+        }
+        .cuadro {
+            width: 70%; 
+            height: auto; /* Altura automática para mantener la proporción */
+            background-color: #CDE8E5; /* Color de fondo */
+            width: 80%;
+            margin: 0 auto; /* Centra la tabla horizontalmente */
+        }
+        cite{
+            font-size: 25px;
+        }
+        footer{
+            background-color: #57A6A1;
+            margin: none;
+            padding: none;
+        }
+    </style>
+</head>
+<body>
+    
+	<u><h1 align="center" id="seccion1">¿Qué son?</h1></u>
+	<p  align="center">Las tortugas marinas son grandes reptiles<sup>1</sup> con pulmones que habitan los mares tropicales y subtropicales a lo largo del mundo.<br> Sus conchas se componen de una parte superior llamada caparazón y una parte inferior conocida como plastrón.<br> Unas escamas duras llamadas escudos cubren su caparazón y piel.<br> El número de estos escudos y su disposición nos ayudan a determinar las diferentes especies.</p>
+	
+	<img class="foto" src="img1.jpg" alt="Imagen de una tortuga marina" align="left">
+	<img class="foto" src="img2.jpg" alt="Imagen de una tortuga marina" align="center">
+	<img class="foto" src="cam3.jpg" alt="Imagen de una tortuga marina" align="right">
+
+    <hr>
+
+    <!--Texto con animacion marquee desplazándose hacia la izquierda-->
+    <marquee  scrollamount="2.5"><u><h2 align="left"  id="seccion2">¿Sabías qué?</h2></u>
+    <p align="left" >Las tortugas marinas no tienen cromosomas sexuales como  otros reptiles,<br> su género depende de la temperatura del nido durante la incubación<sup>2</sup>. <br> La arena más caliente produce más crías hembra, por lo que son vulnerables <br> al cambio climático.</p></marquee>
+    <hr>
+
+    <img class="foto" src="cam1.jpg" alt="Imagen de una tortuga marina"  align="left">
+    <img class="foto" src="cam2.jpg" alt="Imagen de una tortuga marina"  align="center" >
+    <img class="foto" src="img5.jpg" alt="Imagen de una tortuga marina"  align="right">
+    <hr>
+
+    <!--Texto con animacion marquee desplazándose hacia la derecha-->
+	<marquee direction="right" scrollamount="2.5"><u><h2 align="right"  id="seccion3">¿Cuál es su rol en la naturaleza?</h2></u>
+	<p align="right">Las tortugas marinas son cruciales para los ecosistemas marinos,<br>
+    manteniendo la salud de los pastos y arrecifes que benefician a especies como camarones, langostas y atún. <br>
+    Han habitado la Tierra y los mares durante 100 millones de años. <br>
+    Además, tienen gran importancia cultural y turística. <br>
+    Pueden poner más de 150 huevos por nido varias veces por temporada,<br>
+    compensando así las altas tasas de mortalidad en las crías.</p></marquee>
+    <hr>
+
+    <!--Insersión de video sobre el nacimiento de las tortugas-->
+    <u><h2 align="center"  id="seccion4">Así nacen</h2></u>
+        <center>
+            <video  controls="" width="600"  poster="logo.png"  >
+                 <source src="video.mp4" type="video/mp4">
+             </video>
+        </center>
+
+    <!--Tabla con los datos de las especies de tortuga marina-->
+    <u><h3  id="seccion5"> Tipos de especies marinas:</h3></u>
+	<table class="cuadro" border="light" cellspacing="3" cellpadding="10">
+        
+            <tr>
+                <th><font  color="blue"size="3"><b><em>Especie</em></b></font></th>
+                <th><font  color="blue" size="3"><b><em>Peso(kg)</em></b></font></th>
+                <th><font  color="blue" size="3"><b><em>Tamaño</em></b></font></th>
+                <th><font  color="blue" size="3"><b><em>Longevidad(años)</em></b></font> </th>
+            </tr>
+            <tr>
+                <td >
+                    <b>
+                    <font  color="green">Caretta caretta (Tortuga boba)</font>
+                    <a href="https://www.nationalgeographic.com.es/mundo-animal/6-curiosidades-sobre-la-tortuga-boba_19235" target="_blank"> Curiosidades</a> </b>
+                    <img src="boba.jpg" width="100" height="80"align="right">
+                </td>
+                <td ALIGN="center">150-500</td>
+                <td ALIGN="center">1-1.2 m</td>
+                <td ALIGN="center">60-80</td>
+            </tr>
+            <tr>
+                <td ><b>
+                    <font color="green">Chelonia mydas (Tortuga verde)</font>
+                    <a href="https://oceanwide-expeditions.com/es/destacados/vida-silvestre/tortuga-verde" target="_blank">Curiosidades</a>
+                    </b>
+                    <img src="verde.jpg" width="100" height="80"align="right">
+
+                </td>
+                <td ALIGN="center">150-300</td>
+                <td ALIGN="center">1-1.2 m</td>
+                <td ALIGN="center">80-100</td>
+            </tr>
+            <tr>
+                <td ><b>
+                    <font color="green">Eretmochelys imbricata (Tortuga carey)</font>
+                    <a href="https://www.dresseldivers.com/es/blog/datos-tortuga-carey/" target="_blank">Curiosidades</a></b>
+                    <img src="carey.jpg" width="100" height="80"align="right">
+                </td>
+                <td ALIGN="center">30-70</td>
+                <td ALIGN="center">0.6-1.1 m</td>
+                <td ALIGN="center">30-50</td>
+            </tr>
+            <tr>
+                <td><b>
+                    <font color="green">Dermochelys coriacea (Tortuga laúd)</font>
+                    <a href="https://www.nationalgeographicla.com/animales/los-datos-que-hay-que-saber-sobre-la-tortuga-laud" target="_blank">Curiosidades</a></b>
+                    <img src="laud.jpg" width="100" height="80"align="right">
+                </td>
+                <td ALIGN="center">250-700</td>
+                <td ALIGN="center">1.2-2.2 m</td>
+                <td ALIGN="center">30-100</td>
+            </tr>
+            <tr>
+                <td><b>
+                    <font  color="green">Lepidochelys olivacea (Tortuga golfina)</font>
+                    <a href="https://www.mundotortugas.com/tortuga-golfina/" target="_blank">Curiosidades</a></b>
+                    <img src="golfina.jpg" width="100" height="80"align="right">
+                </td>
+                <td ALIGN="center">35-45</td>
+                <td ALIGN="center">0.6-0.7 m</td>
+                <td ALIGN="center">50-60</td>
+            </tr>
+            <tr>
+                <td><b>
+                    <font color="green">Natator depressus(Tortuga Franca)</font>
+                    <a href="https://spain.inaturalist.org/taxa/73876-Natator-depressus" target="_blank">Curiosidades</a></b>
+                    <img src="lora.jpg" width="100" height="80"align="right">
+                </td>
+                <td ALIGN="center">30-45</td>
+                <td ALIGN="center">0.6-0.8 m</td>
+                <td ALIGN="center">30-50</td>
+            </tr>
+    </table>
+
+    <h4><font size="6"  id="seccion6">Amenazas:</font></h4>
+    <dl>
+        <dt><i><b>-Caza furtiva.</b></i></dt>
+            <dd>La caza y recolección de huevos para su consumo son las causas principales de la drástica reducción en las poblaciones de todo el mundo. Los huevos de tortugas se consideran un afrodisíaco<sup>3</sup> en algunos países y se comen crudos o se venden como bocadillos en bares y restaurantes.</dd>
+
+        <dt><i><b>-Pesca incidental.</b></i></dt>
+            <dd>Cada año, miles de tortugas se ven atrapadas a causa de las operaciones camaroneras. Las tortugas marinas si no pueden llegar hasta la superficie para respirar, se ahogan. Las pesquerías que utilizan palangres y redes de enmalle también son de las mayores causas de mortalidad entre las tortugas.Todos los años hay tortugas quedan atrapadas en las plumas de arrastre, en los anzuelos de los palangres y en las redes de pesca.</dd>
+        <dt><i><b>-Comercio ilegal.</b></i></dt>
+           <dd>La fuerte demanda y los altos precios del mercado de los caparazones de las tortugas marinas especialmente los de las <b><em>tortugas carey</em></b> y los productos fabricados con el cuero de las <b><em>tortugas baulas</em></b> amenazan a las poblaciones de estas especies vulnerables.</dd>
+        <dt><i><b>-Cambio climático.</b></i></dt>
+            <dd>El clima cambiante y el calentamiento global pueden causar un impacto severo en las poblaciones de tortugas.La determinación del sexo de las tortugas marinas depende de la temperatura.Un cambio en las temperaturas globales altera la temperatura de la arena, lo cual afecta el sexo de las crías e incrementa el riesgo de una inestabilidad en la composición de las poblaciones. </dd>
+        <dt><i><b>-Contaminacion de los mares.</b></i></dt>
+            <dd>Las tortugas marinas pueden confundir los objetos de material plástico que flotan en el mar con alimento, como las medusas, y se asfixian cuando tratan de comerlos. Se enredan con los aparejos<sup>4</sup> de pesca que se han desechado, se ahogan, no pueden alimentarse o nadar. La basura en las playas puede atrapar a las crías recién eclosionadas<sup>5</sup> y evitar que lleguen al mar.  Los derrames de petróleo pueden envenenar a las tortugas de todas las edades.</dd>
+    </dl>
+    <hr>
+
+    <!--Cita-->
+    <div style="display: flex; justify-content: center; align-items: center;" >
+        <span>
+            <cite>"Es inmensamente triste ver como la naturaleza nos está hablando y los humanos no escuchamos."</cite> <br>
+            <p align="right">-<b>Victor Hugo</b>.</p>
+            
+        </span>
+    </div>
+    <hr>
+    <!--Incorporación de imagen dezplazándose con marquee hacia la izquierda-->
+    <marquee><img  src="img9.jpg" alt="Imagen de una tortuga marina" ></marquee>
+    <h4  id="seccion7">Los 10 países donde más se reproducen:</h4>
+        <ol align="left"> 
+            
+                <li>México</li>
+                <li>Costa Rica</li>
+                <li>Australia</li>
+                <li>Estados Unidos</li>
+                <li>Brasil</li>
+                <li>Malasia</li>
+                <li>India</li>
+                <li>Indonesia</li>
+                <li>Omán</li>
+                <li>Sudáfrica</li>
+        </ol>
+
+    <!--Links para obtener más información-->
+    <u><h4  id="seccion8">Proyectos de preservación de especie:</h4></u>
+        <ul>
+            <li>
+                <a href="https://acres.org.sg/wildlife-rescue/?gad_source=1&gclid=CjwKCAjw5v2wBhBrEiwAXDDoJcG08486_9imkZvYuKT8dEEufWPdjXVqviriBjiSv6jHL0vLmLEycxoCBAAQAvD_BwE" target="_blank">ACRES</a>
+            </li>
+            <li> 
+                <a href="https://www.raysofgratitude.com/online-auction?gad_source=1&gclid=CjwKCAjw5v2wBhBrEiwAXDDoJTnm1W3CM1VO7rJKA7QfLMjKuqQaoaJA1P8paHq6SWTSS5Z1v8vMjhoCn0oQAvD_BwE" target="_blank"> RAYS OF GRATITUDE</a>
+            </li>
+            <li>
+                <a href="https://www.animalkarma.org.mx/?gad_source=1&gclid=CjwKCAjw5v2wBhBrEiwAXDDoJSyZb4JT74ssMWO6GRfQ4l2I5taa1ZKx3mJPndDIdhiBlO_DAxRc8xoCRTkQAvD_BwE" target="_blank">Animal Karma</a>
+            </li>
+            <li>
+                <a href="https://www.fundacionpalmaaquarium.org/centro-de-rescate/rescate-y-rehabilitacion-de-tortugas-marinas/" target="_blank">Fundacion Palma Aquarium</a>
+            </li>
+        </ul>
+    </p>
+
+    <!--Incoporación de glosario-->
+
+    <u><h4  id="seccion9"></sub>Glosario:</h4></u>
+    <p>
+        <sup>1</sup> Dicho de un animal: Del grupo de los vertebrados, ovíparo u ovovivíparo, de temperatura variable y respiración pulmonar que, por carecer de patas o por tenerlas muy cortas. <br>
+        <sup>2</sup> Acto por el que los animales ovíparos incuban los huevos para mantenerlos calientes y así se puedan desarrollar los embriones. <br>
+        <sup>3</sup> Cualquier alimento que se consuma con el declarado propósito de despertar o aumentar el deseo sexual. <br>
+        <sup>4</sup> Conjunto de elementos o útiles empleados para la pesca, como anzuelos conjunto de elementos o útiles empleados. <br>
+        <sup>5</sup> Hecho de nacer o brotar de un ser vivo luego de romper la envoltura que lo contenía. <br></p>
+
+    <!--Incoporación de audio mp3-->
+    <h4>Sonido de mar</h4>
+    <audio src="audio1.mp3" autoplay controls loop></audio>
+    <br><br><br><br>
+
+    <!-- Pie de pagina  -->
+    <footer>
+
+       <div style="width: 100%;"> 
+
+            <div style="display: flex; padding: 2px;">
+                <div  style=" width: 40%; padding: 5px;">
+                    <img align="left" src="icono.png" width="90" height="90">
+                    <h5 align="center"> <font size="6">SaveSeaTurtles</font></h5>
+                </div> 
+                <div  style="width: 50%;padding: 5px; ">
+                    <b><p align="center">Este sitio web ha sido desarrollado como parte de un proyecto para las materias Programación III y Laboratorio III de la Universidad Tecnológica Nacional (UTN). El objetivo es demostrar los conocimientos adquiridos en el desarrollo web. Aquí se aplican conceptos de HTML.</p></b>
+                </div>
+            </div>
+
+            <div style="padding: 10px; margin: 0;">
+                <hr>
+                <p align="center"><b> Copyright&copy; 2024 Todos los derechos reservados. </b><br>
+                Autora Debora Monsalvo.</p>
+            </div>
+
+       </div>
+    </footer>
+</body>
+</html>
